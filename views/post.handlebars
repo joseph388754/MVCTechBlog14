@@ -1,0 +1,12 @@
+<h2>Latest Posts</h2>
+
+<div>
+
+{{#each posts as |post| }}
+<div>
+    <h5><a href="/api/posts/{{post.id}}">{{post.title}}</a></h5>
+    <p>{{post.text}}</p>
+</div>
+
+{{/each}}
+</div>

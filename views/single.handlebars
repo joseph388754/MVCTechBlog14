@@ -1,0 +1,27 @@
+<article class="post">
+    <div class="title">
+        <h2>{{singlePost.title}}</h2> 
+        <h4>By {{singlePost.user.username}}</h4>
+        <p>{{singlePost.text}}</p>
+
+        {{#each singlePost.comment as |comment|}}
+            <div>{{comment.comment_text}}</div>
+        {{/each}}
+    </div>
+</article>
+
+
+{{#if logged_in}}
+<form class="comment-form">
+    <div>
+        <textarea name="comment-body"></textarea>
+    </div>
+
+    <div>
+        <button type="submit">Add your comment!</button>
+    </div>
+</form>
+{{/if}}
+{{#if loggedIn}}
+<script src="/js/comment.js"></script>
+{{/if}}

@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Hello World!",
+        "text": "How are you?",
+        "user_id": 1
+    },
+    {
+        "title": "Hello!",
+        "text": "Is this working?",
+        "user_id": 2
+    },
+    {
+        "title": "Test post",
+        "text": "wrong post",
+        "user_id": 3
+    }
+]
